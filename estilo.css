@@ -40,7 +40,8 @@ strong {
   font-size: 14px;
   color: #333;
   font-family: Verdana, OpenSans, sans-serif;
-  margin-left:20px
+  margin-left:20px;
+  margin-right:20px;
 }
 
 
@@ -59,7 +60,6 @@ strong {
                                       1a. Linha tem tamnho auto (exato tamanho para caber os elementos
                                       2a. Linha tem o restante 1fr
                                       3a. Linha tem tamnho auto (exato tamanho para caber os elementos*/
-
 }
 
 body{
@@ -69,6 +69,7 @@ body{
 
 #cabecalho-pagina {
   grid-column: 2 / 3;
+  grid-row: 1 / 2;
 }
 
 #lateral {
@@ -91,6 +92,7 @@ body{
 
 /* EXERCÍCIO 3: cabeçalho da página */
 #cabecalho-pagina {
+  margin: 10px 10px 10px 0px;
 
 }
 
@@ -99,6 +101,7 @@ body{
   font-size: 36px;
   color: #e90c0c;
   font-weight: normal;
+  text-align:center;  /*Exercício 3 - alinhando texto ao centro*/
 }
 
 #cabecalho-pagina h2 {
@@ -106,6 +109,7 @@ body{
   font-size: 24px;
   color: #333;
   font-weight: normal;
+  text-align:right;  /*Exercício 3 - alinhando texto a direita*/
 }
 
 /* EXERCÍCIO 4: cada item do menu */

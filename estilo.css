@@ -1,5 +1,10 @@
 /* EXERCÍCIO 1: fontes */
-/* importá-las aqui... e definir as `font-family` da turminha... */
+@import "fonts/ravie.css";
+@import "fonts/verdana.css";
+
+h1 {
+  font-family: Ravie;
+}
 
 
 body {
@@ -27,37 +32,59 @@ strong {
   font-size: 18px;
   color: #333;
   margin-top: 30px;
+  font-family: Verdana, OpenSans, sans-serif;
+  margin-left:20px
 }
 
 #cardapio article {
   font-size: 14px;
   color: #333;
+  font-family: Verdana, OpenSans, sans-serif;
+  margin-left:20px
 }
 
 
 /* EXERCÍCIO 2: layout da página */
 #recipiente {
   /* layout da página aqui */
-  /* ... */
-  /* ... */
-  /* ... */
-  /* ... */
+  width: 800px;       /*Exercício 2 - Largura de tamanho fixo*/
+  margin-left: auto;  /*Exercício 2 - Centralizado*/
+  margin-right: auto; /*Exercício 2 - Centralizado*/
+  min-height: 100vh;  /*Exercício 2 - altura mínima de 100vh*/
+  display: grid;      /*Exercício 2 - uso do display grid*/
+  grid-template-columns: 154px 1fr; /*Exercício 2 - distribuiçãp das colunas 
+                                      1a. Coluna tem tamnho fixo 154px
+                                      2a. Coluna tem o restante 1fr*/
+  grid-template-rows: auto 1fr auto; /*Exercício 2 - distribuiçãp das linhas 
+                                      1a. Linha tem tamnho auto (exato tamanho para caber os elementos
+                                      2a. Linha tem o restante 1fr
+                                      3a. Linha tem tamnho auto (exato tamanho para caber os elementos*/
+
+}
+
+body{
+  margin-top: 0px;    /*Exercício 2 - removendo a margem de 8px do body*/
+  margin-bottom: 0px; /*Exercício 2 - removendo a margem de 8px do body*/
 }
 
 #cabecalho-pagina {
-
+  grid-column: 2 / 3;
 }
 
 #lateral {
-
+  grid-column: 1 / 2;
+  grid-row: 2 /3 ;
 }
 
 #cardapio {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
 
 }
 
 #rodape-pagina {
-
+  grid-column: 2 / 3;
+  grid-row: 3 / 4;
 }
 
 

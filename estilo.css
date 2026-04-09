@@ -114,7 +114,11 @@ body{
 
 /* EXERCÍCIO 4: cada item do menu */
 article {
+  display: flex;                  /*Exercício 4 - usando flexbox*/
+  justify-content:space-between;  /*Exercício 4 - nome do item à esquerda e o preço à direita*/
+  padding: 10px;                  /*Exercício 4 - esapçamento entre itens*/
 }
+
 
 
 /* EXERCÍCIO 5: o rodapé */

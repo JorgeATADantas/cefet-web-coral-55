@@ -141,9 +141,14 @@ article {
 
 /* EXERCÍCIO 7: o ticket */
 #ticket {
+  position: fixed;         /*Exercício  7 - posição fixa*/
+  top: calc(50% - 84px/2); /*Exercício  7 - centralizado*/
+  left: -89px;            /*Exercício  7 - ficar escondido*/
+  transition: left 100ms ease-out;
 }
 
 #ticket:hover {
+  left: 0px;
 }
 
 
